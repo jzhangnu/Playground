@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Calculator by Elon</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Titillium+Web' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+    <div class="container">
+      <div id="elon">
+        Calculator by Elon
+      </div>
+      <div class="display">
+        <div id="screen" value='0'>0</div>
+        <div id="sign"></div>
+      </div>
+      <div class='panel'>
+        <div class="row">
+          <button type="button" name="button">MC</button>
+          <button type="button" name="button">M+</button>
+          <button type="button" name="button">M-</button>
+          <button type="button" name="button">MR</button>
+        </div>
+        <div class="row">
+          <button id='clear' type="button" name="button">C</button>
+          <button id='signl' type="button" name="button">±</button>
+          <button id='divide' value="/" type="button" name="button">&divide</button>
+          <button id='multiply' value="*" type="button" name="button">×</button>
+        </div>
+        <div class="row">
+          <button class='digit' value="7" type="button" name="button">7</button>
+          <button class='digit' value="8" type="button" name="button">8</button>
+          <button class='digit' value="9" type="button" name="button">9</button>
+          <button id='minus' value="-" type="button" name="button">-</button>
+        </div>
+        <div class="row">
+          <button class='digit' type="button" name="button">4</button>
+          <button class='digit' type="button" name="button">5</button>
+          <button class='digit' type="button" name="button">6</button>
+          <button id='plus' value="+" type="button" name="button">+</button>
+        </div>
+        <div class="row">
+          <div class="col-left">
+            <div class="row">
+              <button class='digit' type="button" name="button">3</button>
+              <button class='digit' type="button" name="button">2</button>
+              <button class='digit' type="button" name="button">1</button>
+            </div>
+            <div class="row">
+              <button class='digit' type="button" name="button" id="zero">0</button>
+              <button class='digit' type="button" name="button">.</button>
+            </div>
+          </div>
+          <div class="col-right">
+            <button id='equal' type="button" name="button">=</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="jquery-2.1.4.min.js">
+    </script>
+    <script type="text/javascript" src="calculator.js">
+    </script>
+  </body>
+</html>
