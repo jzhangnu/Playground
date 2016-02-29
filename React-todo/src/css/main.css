@@ -1,0 +1,81 @@
+body{
+	background:no-repeat center center fixed url('image/background.jpg');
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.appcontent{
+	width: 55%;
+	margin:0 auto;
+	background: rgba(255, 255, 255, 0.2);
+	box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.appcontent input{
+	background:rgba(255, 255, 255, 0.72);
+}
+
+#inputfield{
+    width: 70%;
+    height: 42px;
+    margin-right:8px;
+    display:inline-block !important;
+}
+
+.appcontent h1{
+	padding:20px;
+	color: #fff;
+}
+
+.appcontent h1{
+	text-align: center;
+}
+
+.createform{
+	text-align: center;
+}
+
+.createbtn{
+	padding: 10px 24px;
+}
+
+.todoTable{
+	width: 100%;
+}
+
+.todoTable i{
+	color: white;
+	font-size: 21px;
+}
+
+
+.todoTable td,th{
+	padding:10px;
+}
+
+.icon{
+	text-align: center;
+	width:12%;
+}
+
+.action{
+	width: 28%;
+}
+
+.delete{
+	cursor: pointer;
+}
+
+@media screen and (max-width: 799px){
+	.appcontent{
+		width: 93%;
+	}
+
+	#inputfield{
+		width: 58%;
+	}
+
+
+}
