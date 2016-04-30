@@ -108,4 +108,5 @@ var Productlist = React.createClass({
   }
 });
 
+//Creatng a virtual DOM
 ReactDOM.render(<Productlist/>,document.getElementById('example'));
