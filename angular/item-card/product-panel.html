@@ -1,0 +1,49 @@
+<section>
+  <ul class="nav nav-pills">
+    <li ng-class='{ active: panel.isSelected(1)}'>
+      <a href="#" ng-click=panel.selectTab(1)>Description</a></li>
+    <li ng-class='{ active: panel.isSelected(2)}'>
+      <a href="#" ng-click=panel.selectTab(2)>bbbb</a></li>
+  </ul>
+  <div class="panel" ng-show='panel.isSelected(1)'>
+    <p>
+      description
+    </p>
+    <h4>{{product.description}}</h4>
+  </div>
+  <div class="panel" ng-show='panel.isSelected(2)'>
+    <p>
+      reviews
+    </p>
+    <blockquote ng-repeat='review in product.reviews'>
+      <b>star{{review.star}}</b>
+      {{review.body}}
+      <cite>by: {{review.author}}</cite>
+    </blockquote>
+<!-- new review form, validation-->
+    <form  name='reviewForm' ng-controller="reviewController as reviewCtrl" method="post"
+        ng-submit='reviewForm.$valid && reviewCtrl.addReview(product)' novalidate><!-- Turn off default html validation-->
+<!-- New review preview-->
+      <blockquote>
+        <b>star: {{reviewCtrl.review.star}}</b><br>
+        {{reviewCtrl.review.body}}<br>
+        <cite>by: {{reviewCtrl.review.author}}</cite>
+      </blockquote>
+<!-- New review enter here -->
+      <select ng-model='reviewCtrl.review.star' class="" name="" required>
+         <option value="1">1 star</option>
+         <option value="2">2 star</option>
+         <option value="3">3 star</option>
+      </select><br>
+      <textarea ng-model='reviewCtrl.review.body' name="name" rows="8" cols="40" required></textarea><br>
+      by:
+      <input ng-model='reviewCtrl.review.author' type="text" name="name" value="" required><br>
+<!-- Form validation it come with angular -->
+      <div class="">
+        This form is {{reviewForm.$valid}}
+      </div>
+<!-- Submit new review here -->
+      <button type="submit" name=""> submit </button>
+    </form>
+  </div>
+</section>
