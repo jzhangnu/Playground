@@ -1,0 +1,88 @@
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		.menu{
+			background-color: #eee;
+			margin: 0 auto;
+			width: 500px;
+			height: 40px;
+		}
+
+		ul{
+			list-style: none;
+			margin: 0px;
+			padding: 0px;
+		}
+
+		ul li{
+			float: left;
+			line-height: 40px;
+			width: 80px;
+			padding: 0 10px;
+			text-align: center;
+			position: relative;
+		}
+
+		a:hover{
+			background-color: #aaa;
+			color: #fff;
+		}
+
+		ul li ul li{
+			background-color: #eee;
+			margin-top: 2px;
+			float: none;
+
+		}
+
+		ul li ul{
+
+			left: 0px; top: 10px;
+			display: none;
+		}
+
+
+		a{
+			text-decoration: none;
+			display: inline-block;
+			padding: 0 10px;
+			color: #000;
+		}
+		ul li:hover ul{
+			display: block;
+		}
+
+	</style>
+	<script type="text/javascript">
+		function showsubmenu(li){
+			var submenu=li.getElementsByTagName("ul")[0];
+			submenu.style.display="block"
+		}
+		function hidesubmenu(li){
+			var submenu=li.getElementsByTagName("ul")[0];
+			submenu.style.display="none"
+		}
+
+	</script>
+</head>
+<body>
+
+	<div class='menu'>
+		<ul>
+			<li>html</li>
+			<li>css</li>
+			<li onmouseover="showsubmenu(this)" onmouseout='hidesubmenu(this)'><a href='#'>javascript
+				</a><ul>
+					<li>jquery</li>
+					<li>angular</li>
+					<li>react</li>
+				</ul>
+			</li>
+			<li>ruby</li>
+
+		</ul>
+	</div>
+</body>
+
+</html>

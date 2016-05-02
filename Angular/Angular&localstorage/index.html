@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>TODO app</title>
+    <script src="node_modules/angular/angular.min.js"></script>
+    <script src="js/main.js"></script>
+  </head>
+<!--data前缀是让其对HTML5有效-->
+  <body ng-app='app'>
+    <div class="container" ng-controller="TodoController">
+    	<header class="app-header">
+    		<h1 class="app-title">{{ appTitle }}</h1>
+    		<h1 class="app-headline">{{ appHeadline }}</h1>
+    	</header>
+
+    	<section class="app-body">
+    		<section class="archive-control">
+    			<span>{{ remaining() }} of {{ todos.length }} remaining</span>
+    			<p>[ <a href="" ng-click="archive()">Remove Completed Items</a> ]</p>
+    		</section>
+
+    		<ul class="unstyled">
+<!--track by用来解决ng—repeat中重复数据遍历报错的问题-->
+<!--对于数字对象来说，它的id就是它自身的值，因此，数组中是不允许存在两个相同的数字的。
+为了规避这个错误，需要定义自己的track by表达式。$index循环的索引变量-->
+    			<li ng-repeat="todo in todos track by $index">
+    				<input type="checkbox" ng-model="todo.done">
+    				<span class="done-{{ todo.done }}">{{ todo.text }}</span>
+    			</li>
+    		</ul>
+
+    		<form ng-submit="addTodo()" class="todo-form">
+    			<input type="text" data-ng-model="todoText" placeholder="Enter new ToDo item" />
+    			<br/>
+    			<input type="submit" value="Add Task" />
+    		</form>
+    	</section>
+    </div>
+</body>

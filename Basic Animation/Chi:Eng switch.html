@@ -1,0 +1,54 @@
+<html>
+<head>
+	<title></title>
+<!--扩展到需要的大小，用以包括内部float的子元素-->
+	<style type="text/css">
+		.menu{
+			list-style: none;
+			font-weight: bold;
+			font-size: 14px;
+			border-bottom: 8px solid #dc4e6b;
+			overflow: auto; 
+		}
+		ul li{
+			float: left;
+			margin-left: 1px;
+		}
+
+		ul li a{
+			text-decoration: none;
+			line-height: 30px;
+			background: #AAA;
+			color: #fff;
+			width: 100px;
+			text-align: center;
+			display: block;
+		}
+		ul li a span{
+			display: none;
+			background-color: #dc4e6b;
+		}
+		ul li a:hover span{
+			display: block;
+		}
+		ul li a:hover{
+			margin-top: -30px;
+		}
+
+	</style>
+
+
+</head>
+<body>
+
+		<ul class='menu'>
+			<li><a>html <span>HTML</span></a></li>
+			<li><a>css <span>CSS</span></a></li>
+			<li><a>javascript <span>JAVA</span></a></li>
+			<li><a>ruby <span>RUBY</span></a></li>
+
+		</ul>
+
+</body>
+
+</html>
