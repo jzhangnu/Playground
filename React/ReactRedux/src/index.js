@@ -6,7 +6,7 @@
 //core part: know how to work with react component(how to render them, how to nest them together)
 
 import React, {Component} from 'react';
-
+import _ from 'lodash';
 //Another part take the component's generated HTML and insert/put into the Dom called ReactDom
 import ReactDOM from 'react-dom';
 import SearchBar from './components/search_bar';
@@ -44,9 +44,12 @@ class App extends Component{
   }
 
   render() {
+    const videoSearch = _.debounce((term) => { this.videoSearch(term)}, 500);
+
+
     return (
       <div>
-        <SearchBar onSearchTermChange ={ term => this.videoSearch(term) }/>
+        <SearchBar onSearchTermChange ={ videoSearch }/>
         <VideoDetail video={this.state.selectedVideo} />
         <VideoList
           onVideoSelect={ selectedVideo => this.setState({selectedVideo}) }
