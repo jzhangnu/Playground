@@ -14,6 +14,33 @@
         height: 80%;
         width: 80%;
       }
+
+      .pin-header{
+        overflow: auto;
+      }
+
+      .pin-header div{
+        display: inline-block;
+        float: left;
+      }
+
+      .pin-avatar{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-image: url('luke.jpg');
+        background-size: cover;
+      }
+      .pin-username{
+        padding: 15px;
+        font-size: 16px;
+        font-weight: 400;
+      }
+      .pin-content{
+        padding: 25px;
+      }
+
+
     </style>
     <script   src="https://code.jquery.com/jquery-1.12.4.min.js"   integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="   crossorigin="anonymous"></script>
     <script>
@@ -39,6 +66,9 @@ var infowindow;
 
 
 function initMap(data) {
+  var infowindow = new google.maps.InfoWindow({
+   content: "contentString"
+ });
 //initial Site
   var initSite = {lat: -12.100, lng: 151.888};
 
@@ -61,10 +91,14 @@ function initMap(data) {
 
       //Service that add content to infowindow
       google.maps.event.addListener(marker, 'click', function() {
-        var cool = 'nigger!';
-      //infowindow.setContent(place.geometry);
-        infowindow.setContent('<img src="pin.jpg" >');
-        console.log(place.geometry);
+        var content = '<div class="">' +
+          '<div class="pin-header">' +
+          '<div class="pin-avatar"></div>' +
+          '<div class="pin-username">Luke</div>' +
+          '</div>'+
+          '<div class="pin-content">Yo know what?</div>' +
+          '</div>';
+        infowindow.setContent(content);
         infowindow.open(map, this);
       });
     }
