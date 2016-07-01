@@ -1,5 +1,5 @@
 jQuery(document).ready(function($) {
-  $('#search-submit').on('click',function(){
+    $('#search-submit').on('click',function(){
     $('#result').empty();
     //PLEASE ADD LOGIN & APIKEY HERE.
     var bitlySDK = new BitlySDK({
@@ -44,7 +44,7 @@ jQuery(document).ready(function($) {
           global_count;
           promises = [];
 
-        var getTitle = bitlySDK.info(value);
+      var getTitle = bitlySDK.info(value);
       var getLong = bitlySDK.expand(value);
       var getCount = bitlySDK.clicks(value);
 
