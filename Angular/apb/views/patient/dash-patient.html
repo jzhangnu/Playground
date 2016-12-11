@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Welcome</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"> 
+     <!--font-awesome-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <!-- Custom CSS -->
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+    <style>
+    
+    
+    /*!
+ * Start Bootstrap - Simple Sidebar HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+/* Toggle Styles */
+
+#wrapper {
+    padding-left: 0;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#wrapper.toggled {
+    padding-left: 250px;
+}
+
+#sidebar-wrapper {
+    z-index: 1000;
+    position: fixed;
+    left: 250px;
+    width: 0;
+    height: 100%;
+    margin-left: -250px;
+    overflow-y: auto;
+    background: #2F577F ;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+    width: 250px;
+}
+
+#page-content-wrapper {
+    width: 100%;
+    position: absolute;
+    padding-left: 15px;
+}
+
+#wrapper.toggled #page-content-wrapper {
+    position: absolute;
+    margin-right: -250px;
+}
+
+/* Sidebar Styles */
+
+.sidebar-nav {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sidebar-nav li {
+    text-indent: 20px;
+    line-height: 40px;
+}
+
+.sidebar-nav li a {
+    display: block;
+    text-decoration: none;
+    color: lightgray;
+}
+
+.sidebar-nav li a:hover {
+    text-decoration: none;
+    color: white;
+    background: #3E9DFF;
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+    text-decoration: none;
+}
+
+.sidebar-nav > .sidebar-brand {
+    height: 65px;
+    background-color:#2F577F ;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+    font-size: 26px;
+    line-height: 60px;
+}
+        
+.sidebar-nav > .sidebar-brand a {
+    color: white;
+}
+    .sidebar-nav  .menutext {
+        padding: 20px 20px;
+        font-size: 18px;
+}
+
+
+.sidebar-nav > .sidebar-brand a:hover {
+    color: #fff;
+    background: none;
+}
+ 
+   
+@media(min-width:768px) {
+    #wrapper {
+        padding-left: 250px;
+    }
+
+    #wrapper.toggled {
+        padding-left: 0;
+    }
+
+    #sidebar-wrapper {
+        width: 250px;
+    }
+
+    #wrapper.toggled #sidebar-wrapper {
+        width: 0;
+    }
+
+    #page-content-wrapper {
+        padding: 20px;
+        position: relative;
+    }
+
+    #wrapper.toggled #page-content-wrapper {
+        position: relative;
+        margin-right: 0;
+    }
+}
+    .header {
+        top: 0;
+        position: fixed;
+        background-color: #fff;
+        height: 65px;
+        width: 100%;
+        margin-left: -35px;
+        box-shadow: 0 2px 2px rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+        line-height: 60px;
+        font-size: 26px;
+
+}
+    .fa-list-ul {
+        padding-left: 20px;
+        }
+        
+        .headerright {
+          
+            font-size: 16px;
+        }
+    </style>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a class="title "href="#">
+                      <i class="fa fa-home"></i> ABS System
+                    </a>
+                </li>
+                <li>
+                    <a class="menutext" href="#"><i class="fa fa-stethoscope"></i>&nbsp Prescription</a>
+                </li>
+                <li>
+                    <a class="menutext" href="#"><i class="fa fa-plus-square"></i>&nbsp Med Cabinet</a>
+                </li>
+                <li>
+                    <a class="menutext" href="#"><i class="fa fa-calendar-check-o"></i>&nbsp Appointment</a>
+                </li>
+                <li>
+                    <a class="menutext" href="#">   <i class="fa fa-user-md"></i>&nbsp My Doctor</a>
+                </li>
+                <li>
+                    <a class="menutext" href="#"> <i class="fa fa-cog"></i>&nbsp Setting</a>
+                </li>
+                
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+         <div class="header">
+               <ul class="list-inline">
+                   <li>   
+                       <a href="#menu-toggle" class="toggle" id="menu-toggle"><i class="fa fa-list-ul"></i>
+                       </a> 
+                   </li>
+                   <li class="headerright"> 
+                       <a href="#/patient/profile"><i class="fa fa-user"></i>&nbsp Ilya Mikhelson
+                       </a>
+                   </li>
+                   <li class="headerright"> 
+                       <a href="#">
+            <i class="fa fa-envelope">
+                    </i> <span class="apb-badge">1</span>
+                    </a>
+                   </li>
+                   <li class="headerright">
+                     <a href="#">  <i class="fa fa-bell"></i>
+                         <span class="apb-badge">3</span> 
+                       </a>
+                   </li>
+             </ul>
+               </div>
+                   
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- Latest compiled and minified JQuery-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>  
+
+<!-- Latest compiled and minified JavaScript --> <script src=https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js ></script>  
+
+
+    <!-- Menu Toggle Script -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
+
+</body>
+
+</html>

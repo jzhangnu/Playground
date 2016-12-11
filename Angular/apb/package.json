@@ -1,0 +1,25 @@
+{
+  "name": "apb-web-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "angular": "latest",
+    "jquery": "2.2.3",
+    "angular-ui-router": "latest",
+    "bootstrap": "latest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jzhangnu/APB-Web-APP.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jzhangnu/APB-Web-APP/issues"
+  },
+  "homepage": "https://github.com/jzhangnu/APB-Web-APP#readme"
+}

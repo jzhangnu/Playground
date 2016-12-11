@@ -1,0 +1,90 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'firebase-tools@^2.4' ]
+2 info using npm@3.6.0
+3 info using node@v5.6.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readGlobalPackageData
+7 silly fetchPackageMetaData firebase-tools@^2.4
+8 silly fetchNamedPackageData firebase-tools
+9 silly mapToRegistry name firebase-tools
+10 silly mapToRegistry using default registry
+11 silly mapToRegistry registry https://registry.npmjs.org/
+12 silly mapToRegistry uri https://registry.npmjs.org/firebase-tools
+13 verbose request uri https://registry.npmjs.org/firebase-tools
+14 verbose request no auth needed
+15 info attempt registry request try #1 at 1:14:28 AM
+16 verbose request id 7f360ecdddec314a
+17 verbose etag "6MUZBSVZCR1IJAIO80ZDLFG5"
+18 http request GET https://registry.npmjs.org/firebase-tools
+19 http 304 https://registry.npmjs.org/firebase-tools
+20 verbose headers { date: 'Sun, 22 May 2016 06:14:29 GMT',
+20 verbose headers   via: '1.1 varnish',
+20 verbose headers   'cache-control': 'max-age=300',
+20 verbose headers   etag: '"6MUZBSVZCR1IJAIO80ZDLFG5"',
+20 verbose headers   age: '11',
+20 verbose headers   connection: 'keep-alive',
+20 verbose headers   'x-served-by': 'cache-ord1721-ORD',
+20 verbose headers   'x-cache': 'HIT',
+20 verbose headers   'x-cache-hits': '1',
+20 verbose headers   'x-timer': 'S1463897669.365560,VS0,VE0',
+20 verbose headers   vary: 'Accept-Encoding' }
+21 silly get cb [ 304,
+21 silly get   { date: 'Sun, 22 May 2016 06:14:29 GMT',
+21 silly get     via: '1.1 varnish',
+21 silly get     'cache-control': 'max-age=300',
+21 silly get     etag: '"6MUZBSVZCR1IJAIO80ZDLFG5"',
+21 silly get     age: '11',
+21 silly get     connection: 'keep-alive',
+21 silly get     'x-served-by': 'cache-ord1721-ORD',
+21 silly get     'x-cache': 'HIT',
+21 silly get     'x-cache-hits': '1',
+21 silly get     'x-timer': 'S1463897669.365560,VS0,VE0',
+21 silly get     vary: 'Accept-Encoding' } ]
+22 verbose etag https://registry.npmjs.org/firebase-tools from cache
+23 verbose get saving firebase-tools to /Users/jzhang/.npm/registry.npmjs.org/firebase-tools/.cache.json
+24 verbose correctMkdir /Users/jzhang/.npm correctMkdir not in flight; initializing
+25 silly fetchPackageMetaData Error: No compatible version found: firebase-tools@^2.4
+25 silly fetchPackageMetaData Valid install targets:
+25 silly fetchPackageMetaData 3.0.0, 2.2.1, 2.2.0, 2.1.1, 2.1.0, 2.0.2, 2.0.1, 2.0.0, 1.2.0, 1.1.6, 1.1.5, 1.1.4, 1.1.3, 1.1.2, 1.1.1, 1.1.0, 1.0.6, 1.0.5, 1.0.4, 1.0.3, 1.0.2, 1.0.1, 1.0.0, 0.5.0, 0.4.0, 0.3.0, 0.2.0, 0.1.6, 0.1.5, 0.1.4, 0.1.3, 0.1.2, 0.1.1, 0.1.0, 0.0.6, 0.0.5, 0.0.4, 0.0.3, 0.0.2, 0.0.1
+25 silly fetchPackageMetaData
+25 silly fetchPackageMetaData     at pickVersionFromRegistryDocument (/usr/local/lib/node_modules/npm/lib/fetch-package-metadata.js:156:16)
+25 silly fetchPackageMetaData     at /usr/local/lib/node_modules/npm/node_modules/iferr/index.js:13:50
+25 silly fetchPackageMetaData     at /usr/local/lib/node_modules/npm/lib/utils/pulse-till-done.js:19:8
+25 silly fetchPackageMetaData     at saved (/usr/local/lib/node_modules/npm/lib/cache/caching-client.js:168:7)
+25 silly fetchPackageMetaData     at /usr/local/lib/node_modules/npm/node_modules/graceful-fs/polyfills.js:210:7
+25 silly fetchPackageMetaData     at FSReqWrap.oncomplete (fs.js:82:15)
+25 silly fetchPackageMetaData  error for firebase-tools@^2.4 [Error: No compatible version found: firebase-tools@^2.4
+25 silly fetchPackageMetaData Valid install targets:
+25 silly fetchPackageMetaData 3.0.0, 2.2.1, 2.2.0, 2.1.1, 2.1.0, 2.0.2, 2.0.1, 2.0.0, 1.2.0, 1.1.6, 1.1.5, 1.1.4, 1.1.3, 1.1.2, 1.1.1, 1.1.0, 1.0.6, 1.0.5, 1.0.4, 1.0.3, 1.0.2, 1.0.1, 1.0.0, 0.5.0, 0.4.0, 0.3.0, 0.2.0, 0.1.6, 0.1.5, 0.1.4, 0.1.3, 0.1.2, 0.1.1, 0.1.0, 0.0.6, 0.0.5, 0.0.4, 0.0.3, 0.0.2, 0.0.1
+25 silly fetchPackageMetaData ]
+26 silly rollbackFailedOptional Starting
+27 silly rollbackFailedOptional Finishing
+28 silly runTopLevelLifecycles Starting
+29 silly runTopLevelLifecycles Finishing
+30 silly install printInstalled
+31 verbose stack Error: No compatible version found: firebase-tools@^2.4
+31 verbose stack Valid install targets:
+31 verbose stack 3.0.0, 2.2.1, 2.2.0, 2.1.1, 2.1.0, 2.0.2, 2.0.1, 2.0.0, 1.2.0, 1.1.6, 1.1.5, 1.1.4, 1.1.3, 1.1.2, 1.1.1, 1.1.0, 1.0.6, 1.0.5, 1.0.4, 1.0.3, 1.0.2, 1.0.1, 1.0.0, 0.5.0, 0.4.0, 0.3.0, 0.2.0, 0.1.6, 0.1.5, 0.1.4, 0.1.3, 0.1.2, 0.1.1, 0.1.0, 0.0.6, 0.0.5, 0.0.4, 0.0.3, 0.0.2, 0.0.1
+31 verbose stack
+31 verbose stack     at pickVersionFromRegistryDocument (/usr/local/lib/node_modules/npm/lib/fetch-package-metadata.js:156:16)
+31 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/iferr/index.js:13:50
+31 verbose stack     at /usr/local/lib/node_modules/npm/lib/utils/pulse-till-done.js:19:8
+31 verbose stack     at saved (/usr/local/lib/node_modules/npm/lib/cache/caching-client.js:168:7)
+31 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/graceful-fs/polyfills.js:210:7
+31 verbose stack     at FSReqWrap.oncomplete (fs.js:82:15)
+32 verbose cwd /Users/jzhang/Desktop/Github/APB-Web-APP
+33 error Darwin 15.2.0
+34 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "-g" "firebase-tools@^2.4"
+35 error node v5.6.0
+36 error npm  v3.6.0
+37 error No compatible version found: firebase-tools@^2.4
+37 error Valid install targets:
+37 error 3.0.0, 2.2.1, 2.2.0, 2.1.1, 2.1.0, 2.0.2, 2.0.1, 2.0.0, 1.2.0, 1.1.6, 1.1.5, 1.1.4, 1.1.3, 1.1.2, 1.1.1, 1.1.0, 1.0.6, 1.0.5, 1.0.4, 1.0.3, 1.0.2, 1.0.1, 1.0.0, 0.5.0, 0.4.0, 0.3.0, 0.2.0, 0.1.6, 0.1.5, 0.1.4, 0.1.3, 0.1.2, 0.1.1, 0.1.0, 0.0.6, 0.0.5, 0.0.4, 0.0.3, 0.0.2, 0.0.1
+38 error If you need help, you may report this error at:
+38 error     <https://github.com/npm/npm/issues>
+39 verbose exit [ 1, true ]

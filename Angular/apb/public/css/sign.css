@@ -1,0 +1,40 @@
+body {
+  background-color: #eee;
+}
+
+.container {
+   text-align: center;
+}
+.panel {
+    border: 2px grey;
+}
+.panel-heading {
+    background-color: #2F577F;
+}
+.panel-title,.forgot {
+    color:white;
+}
+
+.formgroup{
+  overflow: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.formitem{
+  float: left;
+  width: 50%;
+}
+
+.formitem div{
+  text-align: left;
+  font-weight: bold;
+  width: 36%;
+  display: inline-block;
+  float: left;
+  margin: 2%;
+}
+
+.formitem input{
+  width: 55%;
+}

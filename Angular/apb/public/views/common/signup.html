@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="">
+
+    <title>ABS System - Sign up</title>
+
+   <!-- Bootstrap core CSS goes here-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/sign.css" media="screen" title="no title" charset="utf-8">
+
+  </head>
+
+  <body >
+       <div class="container">
+
+
+
+
+
+
+        <div id="signupbox" style="margin-top:50px" class="mainbox col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2" >
+                    <div class="panel">
+                        <div class="panel-heading">
+                            <div class="panel-title">Sign Up</div>
+                        </div>
+                        <div class="panel-body" ng-controller='signupController'>
+                            <form id="signupform" class="form-horizontal" role="form">
+                                <div id="signupalert" style="display:none" class="alert alert-danger">
+                                    <p>Error:</p>
+                                    <span></span>
+                                </div>
+
+                                <div class="formgroup">
+                                  <div class="formitem" novalidate>
+                                    <div>Email</div>
+                                    <input id="textinput" ng-model="email" name="textinput" type="email" placeholder="username" class="form-control input-md">
+                                  </div>
+                                  <div class="formitem">
+                                    <div >Password</div>
+                                    <input id="textinput" ng-model='password' name="textinput" type="password" placeholder="password" class="form-control input-md">
+                                  </div>
+                                </div>
+                                <div class="formgroup">
+                                  <div class="formitem">
+                                    <div >Last Name</div>
+                                    <input id="textinput" ng-model='lastname' name="textinput" type="text" placeholder="username" class="form-control input-md">
+                                  </div>
+                                  <div class="formitem">
+                                    <div >First Name</div>
+                                    <input id="textinput" ng-model='firstname' name="textinput" type="text" placeholder="password" class="form-control input-md">
+                                  </div>
+                                </div>
+                                <div class="formgroup">
+                                  <div class="formitem">
+                                    <div >Address</div>
+                                    <input id="textinput" ng-model='address' name="textinput" type="text" placeholder="username" class="form-control input-md">
+                                  </div>
+                                  <div class="formitem">
+                                    <div >Phone</div>
+                                    <input id="textinput" ng-model='phone' name="textinput" type="text" placeholder="password" class="form-control input-md">
+                                  </div>
+                                </div>
+
+                                                                  <!--Confirm input-->
+
+
+                                <div class="form-group">
+
+                                    <!-- Button -->
+                                    <div class="col-sm-12 controls">
+                                        <button id="btn-signup" type="button" class="btn btn-default " ng-click=signUp()>Sign Up</button>
+                                    </div>
+                                </div>
+
+                                     <div class="form-group">
+                                    <div class="col-md-12 control">
+                                        <div style="border-top: 1px solid#888; padding-top:15px; font-size:85%" >
+                                            Have an account with us?
+                                        <a href="#" onClick="$('#signupbox').hide(); $('#loginbox').show()">
+                                           Login here
+                                        </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </form>
+                         </div>
+                    </div>
+
+
+
+
+         </div>
+    </div>
+
+
+  </body>
+</html>
