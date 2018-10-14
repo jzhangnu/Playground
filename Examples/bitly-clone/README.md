@@ -1,8 +1,0 @@
-#Bitly.com clone
-
-### HOW TO RUN 
-
-* PLEASE ADD LOGIN & APIKEY IN MAIN.JS.
-* THEN OPEN THE INDEX.HTML FILE.
-
-
