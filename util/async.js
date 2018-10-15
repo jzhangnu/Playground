@@ -9,25 +9,28 @@ var parallelLimit = function (arr, limit, callback) {
     var running = 0;
     var results = [];
 
+    function cb(err, res) {
+        if (err) {
+            callback(err);
+            callback = function () {};
+        } else {
+            completed++;
+            running--;
+            results.push(res);
+            if (completed >= arr.length) {
+                callback(null, results);
+            } else processor();
+        }
+    }
+
     var processor = function () {
         while (running < limit && index < arr.length ) {
             running++;
-            arr[index]( function (err, res) {
-                    if (err) {
-                        callback(err);
-                        callback = function () {};
-                    } else {
-                        completed++;
-                        running--;
-                        results.push(res);
-                        if (completed >= arr.length) {
-                            callback(null, results);
-                        } else processor();
-                    }
-            })
+            arr[index](cb)
             index++;
         }
     }
+
     processor();
 }
 
