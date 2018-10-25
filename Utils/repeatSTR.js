@@ -1,4 +1,4 @@
-String.prototype.repeat = function (count) {
+export default function repeat (count) {
     'use strict';
 
     if (this == null) {
@@ -49,4 +49,4 @@ String.prototype.repeat = function (count) {
     // return str
 }
 
-console.log('Hello'.repeat(100));
+// console.log('Hello'.repeat(100));

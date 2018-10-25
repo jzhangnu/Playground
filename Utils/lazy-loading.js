@@ -19,7 +19,7 @@ function lazyload() {
 
     return function() {
         var seeHeight = window.clientHeight;
-        var scrollTop = window.crollTop || document.body.scrollTop;
+        var scrollTop = window.scrollTop || document.body.scrollTop;
         for(var i = n; i < len; i++) {
             if(images[i].offsetTop < seeHeight + scrollTop) {
                 if(images[i].getAttribute('src') === 'images/loading.gif') {

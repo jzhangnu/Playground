@@ -1,5 +1,5 @@
 var Foo = function(a){
-    function bar(){
+    this.bar(){
         return a;
     }
     this.baz = function(){ 
@@ -8,12 +8,9 @@ var Foo = function(a){
 }
 Foo.prototype = {
     biz: function(a) {
-        console.log(a)
-        return a;
-    },
-    // bar: function() {
-    //     console.log(7)
-    // }
+        // return this.a;       correct
+        return a
+    }
 }
 
 foo = new Foo(7);
@@ -22,5 +19,3 @@ foo = new Foo(7);
 // foo.bar();           // 
 // foo.baz();           // 7
 // foo.biz();           // undefined
-
-// foo.biz(7);          // 7
