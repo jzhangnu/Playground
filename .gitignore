@@ -1,2 +1,6 @@
 /node_modules
 /node_modules/*
+
+# graphql app
+/graphql-ex/server/node_modules
+/graphql-ex/server/node_modules/*
